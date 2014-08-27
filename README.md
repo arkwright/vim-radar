@@ -8,9 +8,9 @@ of changes between two commits.
 Because sometimes you just need to see the following:
 
 1. Exactly which files were changed between two specific commits.
-1. The specific changes to those files.
+1. The precise changes to those files.
 
-And because it's nice to have it wrapped up in an intuitive user interface.
+And because it's nice to have it all wrapped up in an intuitive user interface.
 
 ## Installation
 
@@ -25,7 +25,7 @@ And then:
 
 Only tested in Vim 7.4 on OS X using MacVim.
 
-** This plugin is very much a prototype. Your mileage may vary! **
+**This plugin is very much a prototype. Your mileage may vary!**
 
 ## Usage
 
