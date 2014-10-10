@@ -65,6 +65,10 @@ Pull requests, feature requests, ideas, bug reports, etc., are all welcome.
 
 Uses [Semantic Versioning](http://semver.org/).
 
+**0.1.1** (2014-10-9)
+
+* Fix diff failing when current working directory is changed.
+
 **0.1.0** (2014-08-27)
 
 * Add `:Radar` command, with file list, `:Gdiff` integration, and convenient

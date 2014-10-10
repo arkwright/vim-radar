@@ -10,6 +10,8 @@ function! radar#Radar(...)
   execute 'leftabove vnew ' . l:bufferName
   execute 'vertical resize ' . l:fileListWidth
 
+  let b:currentWorkingDirectory = getcwd()
+
   if a:0 ==# 0
     let b:newCommit = ''
     let b:oldCommit = ''
@@ -43,9 +45,10 @@ function! radar#Radar(...)
 endfunction
 
 function! s:RadarSelectFile()
-  let l:fileListWidth = 50
-  let l:newCommit = b:newCommit
-  let l:oldCommit = b:oldCommit
+  let l:fileListWidth           = 50
+  let l:currentWorkingDirectory = b:currentWorkingDirectory
+  let l:newCommit               = b:newCommit
+  let l:oldCommit               = b:oldCommit
 
   let l:selectedFile = getline('.')
 
@@ -56,7 +59,7 @@ function! s:RadarSelectFile()
 
   only!
   vnew
-  execute 'edit! ' . l:selectedFile
+  execute 'edit! ' . l:currentWorkingDirectory . '/' . l:selectedFile
 
   execute 'Gvdiff ' . l:newCommit . ' ' . l:oldCommit
 
