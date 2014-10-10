@@ -64,7 +64,12 @@ function! s:RadarSelectFile()
   execute 'Gvdiff ' . l:newCommit . ' ' . l:oldCommit
 
   normal! gg
-  normal! ]c
+  " Go forward to the next diff, then backwards to the previous one.
+  " This guarantees that if there is a diff on the very first line,
+  " the cursor will not accidentally end up on the second diff in the file.
+  " Conversely, if the first diff is not on the first line, the cursor will
+  " always end up at the beginning of that first diff.
+  normal! ]c[c 
   normal! zz
   normal! <C-w>=
 endfunction
