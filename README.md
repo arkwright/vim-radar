@@ -71,6 +71,8 @@ Uses [Semantic Versioning](http://semver.org/).
 * Fix buffers not sharing window width.
 * Fix auto-advance to first diff not working if first diff is on first line.
 * Fix diff selection mapping not local to buffer.
+* Fix `:Radar` command not being created if it is a substring of a longer
+  command name, e.g., `:Radars`.
 
 **0.1.0** (2014-08-27)
 
