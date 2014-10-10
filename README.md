@@ -70,6 +70,7 @@ Uses [Semantic Versioning](http://semver.org/).
 * Fix diff failing when current working directory is changed.
 * Fix buffers not sharing window width.
 * Fix auto-advance to first diff not working if first diff is on first line.
+* Fix diff selection mapping not local to buffer.
 
 **0.1.0** (2014-08-27)
 

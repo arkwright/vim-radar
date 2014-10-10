@@ -39,7 +39,7 @@ function! radar#Radar(...)
     normal! dd
     normal gg
   else
-    nnoremap <CR> :call <SID>RadarSelectFile()<CR>
+    nnoremap <buffer> <CR> :call <SID>RadarSelectFile()<CR>
     call <SID>RadarSelectFile()
   endif
 endfunction
