@@ -68,6 +68,7 @@ Uses [Semantic Versioning](http://semver.org/).
 **0.1.1** (2014-10-9)
 
 * Fix diff failing when current working directory is changed.
+* Fix buffers not sharing window width.
 
 **0.1.0** (2014-08-27)
 

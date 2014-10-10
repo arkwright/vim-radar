@@ -66,6 +66,5 @@ function! s:RadarSelectFile()
   normal! gg
   normal! ]c
   normal! zz
-
-  execute 'vertical resize ' . l:fileListWidth
+  normal! <C-w>=
 endfunction
